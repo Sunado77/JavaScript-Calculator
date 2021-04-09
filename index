@@ -1,0 +1,35 @@
+// A simple calculator program by Adoga Sunday Owoicho
+let result;
+
+// Accept input from user
+let operator = prompt('Enter an operator type ( either +, -, *, / ): ');
+
+// take the operand input
+var number1 = parseFloat(prompt('Enter first number: '));
+var number2 = parseFloat(prompt('Enter second number: '));
+
+switch(operator) {
+    case '+':
+         result = number1 + number2;
+        console.log('${number1} + ${number2} = ${result}');
+        break;
+
+    case '-':
+         result = number1 - number2;
+        console.log('${number1} - ${number2} = ${result}');
+        break;
+
+    case '*':
+         result = number1 * number2;
+        console.log('${number1} * ${number2} = ${result}');
+        break;
+
+    case '/':
+         result = number1 / number2;
+        console.log('${number1} / ${number2} = ${result}');
+        break;
+
+    default:
+        console.log('Invalid operator');
+        break;
+}
