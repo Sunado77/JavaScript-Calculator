@@ -1,3 +1,4 @@
+<script type=javaScript/text>
 // A simple calculator program by Adoga Sunday Owoicho
 let result;
 
@@ -33,3 +34,4 @@ switch(operator) {
         console.log('You have entered and invalid operator');
         break;
 }
+</script>
