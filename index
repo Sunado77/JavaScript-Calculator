@@ -3,11 +3,11 @@
 let result;
 
 // Accept input from user
-let operator = prompt('Enter an operator type ( either +, -, *, / ): ');
+let operator = prompt('Enter an operator type to use ( either +, -, *, / ): ');
 
 // take the operand input
-var firstNumber = parseFloat(prompt('Enter first number: '));
-var secondNumber = parseFloat(prompt('Enter second number: '));
+var firstNumber = parseFloat(prompt('Enter the 1st number: '));
+var secondNumber = parseFloat(prompt('Enter the 2nd number: '));
 
 switch(operator) {
     case '+':
@@ -26,7 +26,7 @@ switch(operator) {
         break;
 
     case '/':
-         result = number1 / number2;
+         result = firstNumber / secondNumber;
         console.log('${firstNumber} / ${secondNumber} = ${result}');
         break;
 
