@@ -5,31 +5,31 @@ let result;
 let operator = prompt('Enter an operator type ( either +, -, *, / ): ');
 
 // take the operand input
-var number1 = parseFloat(prompt('Enter first number: '));
-var number2 = parseFloat(prompt('Enter second number: '));
+var firstNumber = parseFloat(prompt('Enter first number: '));
+var secondNumber = parseFloat(prompt('Enter second number: '));
 
 switch(operator) {
     case '+':
-         result = number1 + number2;
-        console.log('${number1} + ${number2} = ${result}');
+         result = firstNumber + secondNumber;
+        console.log('${firstNumber} + ${secondNumber} = ${result}');
         break;
 
     case '-':
-         result = number1 - number2;
-        console.log('${number1} - ${number2} = ${result}');
+         result = firstNumber - secondNumber;
+        console.log('${firstNumber} - ${secondNumber} = ${result}');
         break;
 
     case '*':
-         result = number1 * number2;
-        console.log('${number1} * ${number2} = ${result}');
+         result = firstNumber * secondNumber;
+        console.log('${firstNumber} * ${secondNumber} = ${result}');
         break;
 
     case '/':
          result = number1 / number2;
-        console.log('${number1} / ${number2} = ${result}');
+        console.log('${firstNumber} / ${secondNumber} = ${result}');
         break;
 
     default:
-        console.log('Invalid operator');
+        console.log('You have entered and invalid operator');
         break;
 }
